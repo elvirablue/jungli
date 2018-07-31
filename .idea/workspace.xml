@@ -120,6 +120,9 @@
       <dir>$PROJECT_DIR$/app/scss</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -234,6 +237,7 @@
     <option name="width" value="1357" />
     <option name="height" value="910" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -353,26 +357,25 @@
       <workItem from="1532768055343" duration="3160000" />
       <workItem from="1532795538610" duration="47290000" />
       <workItem from="1532932041916" duration="45697000" />
-      <workItem from="1533014422622" duration="17911000" />
+      <workItem from="1533014422622" duration="18198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115179000" />
+    <option name="totallyTimeSpent" value="115466000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="333" y="253" width="1357" height="910" extended-state="0" />
-    <editor active="true" />
+    <frame x="287" y="123" width="1357" height="910" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21025641" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.55" />
       <window_info id="npm" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32904884" />
-      <window_info id="Gulp" order="2" sideWeight="0.27272728" side_tool="true" visible="true" weight="0.16091955" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.72727275" visible="true" weight="0.16091955" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32862645" />
+      <window_info id="Gulp" order="2" sideWeight="0.27342257" side_tool="true" visible="true" weight="0.16091955" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.72657746" visible="true" weight="0.16091955" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32910246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
