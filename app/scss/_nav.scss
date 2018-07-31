@@ -1,0 +1,100 @@
+.nav-main {
+  display: none;
+  flex-flow: column nowrap;
+  position: absolute;
+  z-index: 10000;
+  left: 0;
+  border: 1px solid $color-green;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.2);
+  .container-fluid {
+    max-width: none;
+    width: auto;
+  }
+  .link, .phone, .link-green {
+    display: block;
+    font-size: 14px;
+    text-shadow: none;
+    text-transform: uppercase;
+    padding: 16px 20px;
+    color: rgb(153, 153, 153);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(51, 51, 51, .3);
+    white-space: nowrap;
+    &:hover, &:active, &.active {
+      color: $color-green;
+    }
+  }
+  .phone, .link-green {
+    display: none;
+  }
+  @include media-breakpoint-up(md) {
+    .container-fluid {
+      width: 100%;
+    }
+
+    &.fixed-top {
+      position: fixed;
+      z-index: 100000;
+      top: 0;
+      left: 0;
+      right: 0;
+      opacity: 1;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      border: none;
+      border-radius: 0;
+      height: 100px;
+
+      .link, .phone, .link-green {
+        border: none;
+        padding: 16px 10px;
+
+      }
+      .phone {
+        display: block;
+        font-size: 22px;
+        color: $color-text;
+        text-decoration: none;
+
+      }
+      .link-green {
+        display: block;
+        font-size: 16px;
+        color: $color-green;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .container-fluid {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        width: 100%;
+        height: inherit;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .link {
+        font-size: 14px;
+      }
+      .phone {
+        font-size: 18px;
+      }
+      .link-green {
+        font-size: 14px;
+      }
+    }
+
+  }
+
+}

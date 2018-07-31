@@ -1,0 +1,93 @@
+.park-type {
+  padding-top: 90px;
+  padding-bottom: 120px;
+  .row {
+    padding-top: 50px;
+  }
+  .item {
+    display: block;
+    width: auto;
+    max-width: 370px;
+    height: auto;
+    min-height: 570px;
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    padding: 210px 30px 50px 70px;
+    position: relative;
+    &.p1 {
+      background-image: url("../img/p1.jpg");
+    }
+    &.p2 {
+      background-image: url("../img/p2.jpg");
+    }
+    &.p3 {
+      background-image: url("../img/p3.jpg");
+    }
+    .t1 {
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+    .t2 {
+      font-size: 30px;
+      padding-bottom: 10px;
+    }
+    ul.list {
+      margin-left: 15px;
+      li {
+        @include text-bold(14px);
+        font-weight: 500;
+        padding-bottom: 5px;
+      }
+
+      li:first-child, li:last-child {
+        font-weight: 900;
+      }
+    }
+    .button {
+      position: absolute;
+      bottom: -29px;
+      left: 50%;
+      margin-left: -115px;
+      &:after {
+        top: 35px;
+      }
+      &:before {
+        height: 62px;
+      }
+      button {
+        max-width: 230px;
+        min-width: 230px;
+        height: 58px;
+        font-size: 14px;
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .item {
+      padding: 210px 10px 50px 30px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .item {
+      padding-top: 150px;
+      min-height: 450px;
+      .t2 {
+        font-size: 26px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    .item {
+      margin: 0 auto 80px;
+    }
+
+  }
+  @include media-breakpoint-down(xs) {
+
+  }
+}

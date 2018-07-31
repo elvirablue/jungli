@@ -1,0 +1,158 @@
+.calc {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .box-gray {
+    width: 100%;
+    height: 816px;
+    margin-top: 45px;
+    padding: 70px 100px;
+    position: relative;
+    background-color: #f0f0f0;
+    .box-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 52px;
+      background-color: #e9e6e6;
+      opacity: 0.55;
+      @include text-bold(18px);
+      font-weight: 400;
+      text-align: center;
+      line-height: 52px;
+    }
+  }
+  .row-input {
+    margin-top: 80px;
+  }
+  .row-checkbox {
+    margin-top: 40px;
+  }
+  .row-result {
+    margin-top: 60px;
+    margin-right: -100px;
+  }
+  .title-input {
+    font-size: 22px;
+    padding-bottom: 20px;
+  }
+  .t1 {
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+  .value {
+    @include text-bold(36px);
+    font-weight: 900;
+    span {
+      font-size: 20px;
+      font-weight: 900;
+    }
+  }
+  .t2 {
+    @include text-bold(18px);
+    font-weight: 400;
+    color: rgb(153,153,153);
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 54px;
+      height: 1px;
+      background-color: #d9d9d9;
+    }
+  }
+  .button {
+    min-width: 470px;
+    margin-top: 55px;
+    &:after {
+      width: 520px;
+      height: 100px;
+      margin-left: -260px;
+      opacity: 0.6;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    .box-gray {
+      padding: 50px 50px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    .title-input, .selector .label {
+      font-size: 18px;
+    }
+    .t1 {
+      font-size: 15px;
+    }
+    .value {
+      font-size: 30px;
+      font-weight: 900;
+      span {
+        font-size: 18px;
+      }
+    }
+    .t2 {
+      font-size: 16px;
+      &:before {
+        width: 45px;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .box-gray {
+      max-width: 450px;
+      height: auto;
+      margin: 30px auto;
+      padding: 0 30px 60px;
+    }
+    .row-input {
+      margin-top: 50px;
+    }
+    .row-checkbox {
+      margin-top: 20px;
+    }
+    .row-result {
+      margin-top: 30px;
+      margin-right: 0;
+    }
+    .col-sm-12 {
+      padding-bottom: 20px;
+    }
+    .title-input {
+      font-size: 16px;
+      padding-bottom: 10px;
+    }
+    .selector .label {
+      font-size: 16px;
+      white-space: nowrap;
+      padding: 50px 0 40px;
+    }
+    .selector .scale {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+    .t1 {
+      padding-bottom: 0;
+    }
+    .value {
+      font-size: 26px;
+    }
+
+  }
+  @include media-breakpoint-down(xs) {
+    .box-gray {
+      padding: 0 7vw 60px;
+    }
+    .button {
+      min-width: 280px;
+      margin-top: 0px;
+    }
+  }
+}

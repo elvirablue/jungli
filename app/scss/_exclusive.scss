@@ -1,0 +1,39 @@
+.exclusive {
+  padding-top: 115px;
+  max-width: 680px;
+  .t1 {
+    font-size: 22px;
+    padding-top: 20px;
+  }
+  .t2 {
+    @include text-bold(18px);
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #fff;
+  }
+  .button {
+    min-width: 340px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 40px;
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 70px;
+    max-width: 450px;
+    .t1 {font-size: 20px;}
+    .t2 {font-size: 16px;}
+  }
+  @include media-breakpoint-down(sm) {
+
+  }
+  @include media-breakpoint-down(xs) {
+    width: 90vw;
+    max-width: 350px;
+    .button {
+      min-width: 280px;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.story {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding-top: 70px;
+    .text {
+      flex: 0 0 715px;
+      width: 715px;
+      margin-right: 80px;
+      p {
+        @include text-bold(18px);
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+        padding-bottom: 20px;
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+    .video {
+      flex: 0 0 335px;
+      .img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 335px;
+        height: 335px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          display: block;
+          max-width: none;
+        }
+      }
+      .play {
+        display: block;
+        width: 100%;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: $color-text;
+        cursor: pointer;
+        padding-top: 50px;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          top: -30px;
+          left: 50%;
+          margin-left: -36px;
+          width: 72px;
+          height: 72px;
+          border-radius: 50%;
+          border: 12px solid #f19123;
+          background-color: #fff;
+          background-image: url("../img/ico/i-play.svg");
+          background-size: 15px;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: all 0.2s ease;
+        }
+        &:hover {
+          &:before {
+            background-color: #f19123;
+            background-image: url("../img/ico/i-play-hover.svg");
+            border-color: #fff;
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    .content {
+      .text {
+        flex: 1 1 auto;
+        width: auto;
+        margin-right: 50px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    .content {
+      padding-top: 40px;
+      flex-flow: column nowrap;
+      .text {
+        padding: 0 30px;
+        margin-right: 0;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .content {
+      .text p {
+        font-size: 16px;
+      }
+    }
+  }
+  @include media-breakpoint-down(xs) {
+    .content {
+      .text {
+        padding: 0 10px;
+
+      }
+      .video {
+        flex: 0 0 250px;
+        .img-wrapper {
+          width: 250px;
+          height: 250px;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+}

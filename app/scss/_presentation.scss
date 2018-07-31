@@ -1,0 +1,34 @@
+.presentation {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  .t1 {
+    padding-top: 15px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    opacity: 0.4;
+  }
+  .button {
+    min-width: 350px;
+  }
+
+  @include media-breakpoint-down(lg) {
+
+  }
+
+  @include media-breakpoint-down(md) {
+    max-width: 400px;
+    padding: 70px 20px 40px;
+    .t1 {font-size: 16px;}
+  }
+  @include media-breakpoint-down(sm) {
+    max-width: 300px;
+    .t1 {font-size: 14px;}
+  }
+  @include media-breakpoint-down(xs) {
+    .button {
+      min-width: 250px;
+    }
+  }
+
+}

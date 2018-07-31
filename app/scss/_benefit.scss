@@ -1,0 +1,52 @@
+.benefit {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  h2 {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .row {
+    padding: 30px 30px;
+  }
+  .item {
+    text-align: center;
+    padding: 0 40px;
+    margin-bottom: 20px;
+    .title {
+      margin-top: -15px;
+      font-size: 21px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    .item .title {
+      font-size: 18px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    .row {
+      padding: 30px 0;
+    }
+    .item {
+      padding: 0;
+      img {
+        max-width: 190px;
+      }
+      .title {
+        font-size: 16px;
+        max-width: 210px;
+        margin: 0 auto;
+      }
+    }
+
+  }
+  @include media-breakpoint-down(xs) {
+    .item .title {
+      font-size: 14px;
+    }
+    .item img {
+      max-width: 130px;
+    }
+  }
+}

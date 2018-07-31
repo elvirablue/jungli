@@ -1,0 +1,86 @@
+.special {
+  padding-top: 120px;
+  padding-left: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  .decor {
+    position: absolute;
+    bottom: -150px;
+    right: 50%;
+    margin-right: -600px;
+  }
+  .title {
+    font-size: 19px;
+  }
+  .row {
+    padding-top: 30px;
+    width: 800px;
+  }
+  .list-orange-circle {
+    padding-top: 10px;
+    li {
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+  .price {
+    padding-top: 10px;
+    font-size: 34px;
+    > .old {
+      font-size: 28px;
+      color: #f7f7f7;
+    }
+    > .new {
+      color: #fff;
+    }
+  }
+  .button {
+    margin-top: 40px;
+    min-width: 300px;
+  }
+
+
+  @include media-breakpoint-down(lg) {
+    padding: 70px 30px 40px;
+  }
+
+  @include media-breakpoint-down(md) {
+    .row {
+      width: auto;
+    }
+    .decor {
+      width: 350px;
+      margin-right: -500px;
+    }
+    .price {
+      font-size: 30px;
+      > .old { font-size: 24px;}
+    }
+
+  }
+  @include media-breakpoint-down(sm) {
+    .decor {
+      margin-right: 0;
+      right: -10vw;
+    }
+    .col-xs-12 {
+      padding-bottom: 30px;
+    }
+    .button {
+      min-width: 280px;
+      margin-top: 20px;
+    }
+
+  }
+  @include media-breakpoint-down(xs) {
+    padding: 70px 10px 40px;
+    .decor {
+      width: 250px;
+      bottom: -160px;
+    }
+    .price {
+      font-size: 26px;
+      > .old { font-size: 20px;}
+    }
+  }
+}
